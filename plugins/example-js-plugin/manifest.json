@@ -1,7 +1,19 @@
 {
-  "name": "Sonsuz Yetki",
-  "description": "Istemci tarafli tum yetkileri acar.",
+  "format": 1,                      // manifest format version. Required. Always 1 today.
+  "id": "com.example.plugin",       // also the folder name on disk
+  "name": "Example Plugin",
+  "description": "...",
   "author": "URRally",
-  "version": "1.0.0",
-  "main": "index.ts"
+  "version": "1.0.0",               // the version of this plugin. Required.
+  "dependencies": {                 // keyed by plugin id
+    "revenge.api": { "version": ">=1" },
+    "discord": { "version": "*" }
+  },
+  "dist": {
+    "script": "index.js",           // relative to the plugin folder
+    "android": {
+      "path": "plugin.jar",         // relative to the plugin folder
+      "class": "com.example.plugin.MyPlugin"  // the class that exposes the `plugin {}` val
+    }
+  }
 }

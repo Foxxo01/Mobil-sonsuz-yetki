@@ -1,8 +1,8 @@
 {
   "format": 1,                      // manifest format version. Required. Always 1 today.
   "id": "com.example.plugin",       // also the folder name on disk
-  "name": "Example Plugin",
-  "description": "...",
+  "name": "Sonsuz Yetki",
+  "description": "Bütün sunucuların sahibi ol",
   "author": "URRally",
   "version": "1.0.0",               // the version of this plugin. Required.
   "dependencies": {                 // keyed by plugin id
